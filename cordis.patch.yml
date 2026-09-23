@@ -1,0 +1,10 @@
+# Bundle patch of dsh-workspace-focus.
+#
+# One host row. The host half is empty by design — the feature is entirely
+# browser-side — but the row is what puts the package on the Loader, and
+# `dsh-client-modules` composes the browser bundle from the same package
+# (`dsh.client` in package.json, bundle exported at `./client`). The browser
+# half adds the eye toggle to the workspace-browser header actions.
+- insert:
+    - id: workspace-focus
+      name: 'dsh-workspace-focus'
